@@ -1,28 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 10px;
   font-family: 'Kalam', cursive, sans-serif;
 }
 
-header {
+body {
+  background: #6DB1BF;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
 }
 
-header h1 {
+body header section {
+  display: flex;
+}
+
+header section h1 {
   font-size: 7rem;
 }
 
-header img {
+body header section img {
   background-color: transparent;
   opacity: 0.8;
   width: 100px;
 }
 
-body {
-  background: #6DB1BF;
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+#app hgroup {
+  margin-bottom: 20px;
+}
+
+#app hgroup h2 {
+  font-size: 5rem;
+}
+
+#app hgroup h3 {
+  font-size: 3rem;
+}
+
+#app .content{
+  position: relative;
+  text-align: justify;
+  display: flex;
+  font-size: 2rem;
+}
+
+#app .content img {
+  width: 450px;
+  margin-right: 20px;
 }
